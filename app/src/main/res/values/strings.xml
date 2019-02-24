@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Awesome Recipes</string>
+    <string name="label_recipe_name">Name</string>
+    <string name="label_recipe_servings">Servings</string>
+    <string name="introduction">Introduction</string>
+    <string name="next_step_cd">Next Step</string>
+    <string name="prev_step_cd">Previus Step</string>
+    <string name="step_cd">Step</string>
+
+    <string name="ingredients">Ingredients</string>
+    <string name="imagen">Imagen</string>
+    <string name="step_image">Step Image</string>
+    <string name="no_ingredients">No ingredients</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="recipes">Recipes</string>
+    <string name="recipe">Recipe</string>
+    <string name="no_recipes">No Recipes</string>
+    <string name="quantity_measure">QUANTITY MEASURE</string>
+</resources>

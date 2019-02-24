@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="listener"
+            type="com.roldannanodegre.bakingapp.fragments.StepListFragment"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/recipe_list_item"
+            layout="@layout/recipe_list_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/b_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawableTint="@color/colorAccent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/ingredients"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:onClick="@{view -> listener.onIngredientesSelected()}"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe_list_item"
+            app:layout_constraintEnd_toEndOf="@+id/recipe_list_item" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_steps"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorIngredientAcquired"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe_list_item"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
